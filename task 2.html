@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidhbali Hospital</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="task 2.js">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-6">
+        <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-semibold">Sidhbali Hospital</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+                    <li><a href="#appointments" class="hover:text-gray-300">Appointments</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center p-16 bg-blue-200">
+        <h2 class="text-4xl font-semibold text-gray-800">Welcome to Sidhbali Hospital</h2>
+        <p class="mt-4 text-lg text-gray-600">Your health is our priority. Offering top-quality healthcare services.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="p-16 bg-white">
+        <h2 class="text-3xl font-semibold text-center text-gray-800">Our Services</h2>
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-700">Emergency Care</h3>
+                <p class="mt-4 text-gray-600">Fast and reliable emergency services available 24/7.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-700">Cardiology</h3>
+                <p class="mt-4 text-gray-600">Specialized heart care with expert cardiologists and advanced equipment.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-700">Orthopedics</h3>
+                <p class="mt-4 text-gray-600">Comprehensive care for bone and joint problems, including surgeries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section id="appointments" class="bg-blue-100 p-16">
+        <h2 class="text-3xl font-semibold text-center text-gray-800">Book an Appointment</h2>
+        <form id="appointment-form" class="max-w-xl mx-auto mt-8 space-y-4">
+            <input type="text" id="name" name="name" placeholder="Full Name" required class="w-full p-4 border border-gray-300 rounded-lg shadow-sm">
+            <input type="email" id="email" name="email" placeholder="Email Address" required class="w-full p-4 border border-gray-300 rounded-lg shadow-sm">
+            <select id="service" name="service" required class="w-full p-4 border border-gray-300 rounded-lg shadow-sm">
+                <option value="Emergency Care">Emergency Care</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="Neurology">Neurology</option>
+            </select>
+            <input type="date" id="date" name="date" required class="w-full p-4 border border-gray-300 rounded-lg shadow-sm">
+            <button type="submit" class="w-full p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition duration-200">Submit</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-16 bg-white">
+        <h2 class="text-3xl font-semibold text-center text-gray-800">Contact Us</h2>
+        <p class="mt-4 text-center text-lg text-gray-600">Sidhbali Hospital, 123 Health St., City, Country</p>
+        <p class="mt-2 text-center text-lg text-gray-600">Phone: (123) 456-7890 | Email: contact@Sidhbali Hospital.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6">
+        <p>&copy; 2025 Sidhbali Hospital. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
